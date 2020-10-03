@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Input and Button</title>
+    <script type="text/javascript">
+    function butclick(){
+document.getElementById("head").innerHTML="new value";
+    											//	alert("clicked");
+    												}
+    											//text	
+   function fn1(){	
+    			var t=document.getElementById("head").value;
+ alert ("value added");   
+ }
+ //Radio 
+ 		function fn2(){
+ 				var t1=document.getElementById("rd1");
+var t2=document.getElementById("rd2");		
+ 			var t3= document.getElementById("rd3"); 			if(rd1.checked==true)
+ 							alert("selected lang is:" +t1.value);
+ 						else	if(rd2.checked==true)
+ 							alert("selected lang is:" +t2.value);
+ 							else if(rd3.checked==true)
+ 							alert("selected lang is:" +t3.value);
+ 							else 
+ 							alert("nothing selected");
+ 				}
+    				//select
+    				function fn3(){
+    								var select=document.getElementById("selectbox");
+    								alert (select.options[select.selectedIndex].value);
+    								}
+    				
+    					</script>
+</head>
+<body>
+<button onclick="butclick()">Click</button>
+    <h2 id="head">some value</h2>
+    <!--Text-->
+    <input type="text" id="head" placeholder="username">
+    <button onclick="fn1()">Click</button>
+    <!--radio-->
+    <h2>select Languages</h2>
+    <input name="grp1" type="radio" id="rd1" value="C">C</input>
+    <input name="grp1" type="radio" id="rd2" value="C++">C++</input>
+    <input name="grp1" type="radio" id="rd3" value="Java">Java</input>
+    <button onclick="fn2()" id="btn">click</button>
+    <br><br>
+    <!--select-->
+   <select id="selectbox" >
+   <option value="Java">Java</option>
+   <option value="python">Python</option>
+   <option value="HTML">Html</option>
+   </select>
+   <br><br>
+   <button onclick="fn3()">Click</button>
+   
+</body>
+
+</html>
