@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Input and Buttons</title>
+    <script type="text/javascript">
+function fn1(){	
+    var t=document.getElementById("head").value;
+ alert ("value added");   
+ }
+function fn2(){
+var t1=document.getElementById("rd1");
+var t2=document.getElementById("rd2");		
+var t3= document.getElementById("rd3")
+if(rd1.checked==true)
+alert("selected lang is:" +t1.value);
+else if(rd2.checked==true)
+alert("selected lang is:" +t2.value);
+else if(rd3.checked==true)
+alert("selected lang is:" +t3.value);
+else 
+alert("nothing selected");
+}
+</script>
+</head>
+<body>
+    <input type="text" id="head" placeholder="username">
+    <button onclick="fn1()">Click</button>
+    <h2>select Languages</h2>
+    <input name="grp1" type="radio" id="rd1" value="C">C</input>
+    <input name="grp1" type="radio" id="rd2" value="C++">C++</input>
+    <input name="grp1" type="radio" id="rd3" value="Java">Java</input>
+    <button onclick="fn2()" id="btn">click</button>
+</body>
+</html>
