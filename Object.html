@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript Objects</title>
+    <script type="text/javascript">
+var day= {
+  day1: "Sunday",
+  day2:"monday",
+  day3:"tuesday",
+  days: function (){
+  document.write("<h1>"+day.day3+"</h1>");
+}
+//add value
+ day.day4="Wednesday";
+document.write("<h1>"+day.day4+"</h1>")
+ //delete value  
+  delete day.day2;
+  document.write("<h1>"+day.day2+"</h1>");
+  day.days();
+</script>
+</head><body>
+</body>
+</html>
