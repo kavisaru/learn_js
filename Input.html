@@ -5,33 +5,34 @@
     <script type="text/javascript">
     function butclick(){
 document.getElementById("head").innerHTML="new value";
-    											//	alert("clicked");
-    												}
-    											//text	
+    //alert("clicked");
+    	}
+   //text	
    function fn1(){	
-    			var t=document.getElementById("head").value;
+   var t=document.getElementById("head").value;
  alert ("value added");   
  }
  //Radio 
- 		function fn2(){
- 				var t1=document.getElementById("rd1");
+function fn2(){
+var t1=document.getElementById("rd1");
 var t2=document.getElementById("rd2");		
- 			var t3= document.getElementById("rd3"); 			if(rd1.checked==true)
- 							alert("selected lang is:" +t1.value);
- 						else	if(rd2.checked==true)
- 							alert("selected lang is:" +t2.value);
- 							else if(rd3.checked==true)
- 							alert("selected lang is:" +t3.value);
- 							else 
- 							alert("nothing selected");
- 				}
-    				//select
-    				function fn3(){
-    								var select=document.getElementById("selectbox");
-    								alert (select.options[select.selectedIndex].value);
-    								}
+var t3= document.getElementById("rd3"); 			
+if(rd1.checked==true)
+     alert("selected lang is:" +t1.value);
+ else	if(rd2.checked==true)
+     alert("selected lang is:" +t2.value);
+ else if(rd3.checked==true)
+     alert("selected lang is:" +t3.value);
+ else 
+     alert("nothing selected");
+ }
+  //select
+ function fn3(){
+ var select=document.getElementById("selectbox");
+    alert (select.options[select.selectedIndex].value);
+    	}
     				
-    					</script>
+   </script>
 </head>
 <body>
 <button onclick="butclick()">Click</button>
