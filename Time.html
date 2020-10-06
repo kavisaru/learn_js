@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timing Functions</title>
+    <script type="text/javascript">
+   var id=0;
+    function print(){
+    				document.getElementById("h"). innerHTML="passed at 3 sec";
+    				}
+    				function start(){
+    								id=window.setTimeout(print,3000);}
+    					function stop(){
+    								window.clearTimeout(id);
+    								}			
+    								//Intervals
+    								var id=0;
+    								var sec=0;
+    function printmsg(){
+    				document.getElementById("s"). innerHTML=sec+"seconds";
+    				sec++;
+    				}
+    				function start1(){
+    								id=window.setInterval(printmsg,1000);}
+    					function stop1(){
+    								window.clearInterval(id);
+    								}			
+    </script>
+</head>
+<body>
+    <button onclick="start()" id="sta">Start</button>
+    <h2 id="h">Sample code</h2>
+    <button onclick="stop()" id="stp">Stop</button><br><br>
+    
+    <button onclick="start1()" id="set">Start1</button>
+    <h2 id="s">Sample code</h2>
+    <button onclick="stop1()" id="clr">Stop1</button>
+</body>
+</html>

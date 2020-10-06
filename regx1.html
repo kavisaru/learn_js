@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Regular Expression</title>
+   
+    <script type="text/javascript">
+        		function validate (){
+        			var phone=document.getElementById("pno").value;	
+        			var regx=/[7-9]\d{9}/;
+    				if(regx.test(phone)){
+    								alert("valid phone number");
+    								}
+    								else {
+    												alert ("Invalid phone number");
+    												document.getElementById("lbl1"). style.visibility="visible";
+    												}
+    				}
+    				  		function emailvalidate (){
+        			var email=document.getElementById("email").value;	
+        			var regx=/([a-z A-Z 0-9])@([a-z A-Z 0-9]).([a-z 0-9])/;
+    				if(regx.test(email)){
+    								alert("valid email");
+    								}
+    								else {
+    												alert ("Invalid email");
+    												document.getElementById("lbl2"). style.visibility="visible";
+    												}
+    				}
+        				
+    				  </script>
+</head>
+<body>
+<h2>Mobile Number Validation</h2>
+   <input type="text" id="pno" placeholder="Phone Number"><br>
+    <label id="lbl1" style="color:red; visibility: hidden">Invalid Phone Number</label><br>
+    <button onclick="validate ()" type="submit">Click</button><br>
+    <!--form1-->
+    <h2>Email Validation</h2>
+    <input type="email" id="email" placeholder="Email"><br>
+    <label id="lbl2" style="color:blue; visibility: hidden">Invalid Email</label><br>
+    <button onclick="emailvalidate()" type="submit">Submit</button><br>
+</body>
+</html>
